@@ -5,165 +5,70 @@
 <title>D.H — Academic Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Font -->
+<!-- Google Fonts for typewriter effect -->
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
 <style>
-body{
-    margin:0;
-    font-family:'Inter', sans-serif;
-    background:white;
-    color:#111;
+body {
+    margin: 0;
+    font-family: 'Courier Prime', monospace; /* typewriter font */
+    background: white;
+    color: #111;
+    line-height: 1.6;
+    padding: 40px;
 }
 
-.container{
-    display:flex;
-    min-height:100vh;
+/* Image inside text */
+.about-me img {
+    float: left; /* image floats on the left */
+    width: 180px;
+    height: 180px;
+    margin-right: 20px; /* space between image and text */
+    margin-bottom: 15px;
+    border-radius: 8px; /* optional rounded corners */
+    object-fit: cover;
+    border: 2px solid #111;
 }
 
-/* LEFT PANEL */
-.left{
-    width:35%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:40px 20px;
-    position:fixed;
-    height:100%;
+/* Links styling (pink) */
+a {
+    color: #e91e63;
+    text-decoration: none;
 }
 
-.left img{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #111;
-    margin-bottom:25px;
+a:hover {
+    text-decoration: underline;
 }
 
-.left h1{
-    margin:10px 0 5px;
-    font-weight:600;
-}
-
-.left p{
-    opacity:.8;
-    font-size:15px;
-}
-
-/* Links in pink */
-a{
-    color:#e91e63; /* pink */
-    text-decoration:none;
-    transition:0.3s;
-}
-
-a:hover{
-    text-decoration:underline;
-}
-
-.socials a{
-    margin:0 10px;
-    font-size:18px;
-}
-
-/* RIGHT PANEL */
-.right{
-    margin-left:35%;
-    padding:60px;
-    max-width:900px;
-}
-
-section{
-    margin-bottom:70px;
-}
-
-h2{
-    font-weight:600;
-    font-size:24px;
-    margin-bottom:15px;
-}
-
-p, li{
-    line-height:1.6;
-}
-
-/* MOBILE */
-@media(max-width:900px){
-    .left{
-        position:relative;
-        width:100%;
-        height:auto;
-    }
-
-    .right{
-        margin-left:0;
-        padding:40px 25px;
-    }
+/* Section headings */
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 40px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-
-<!-- LEFT SIDE -->
-<div class="left">
-    <img src="your-photo.jpg" alt="profile photo">
-    <h1>D. H.</h1>
-    <p>Formal Cryptographic Protocol Analysis</p>
-
-    <div class="socials">
-        <a href="#">Google Scholar</a>
-        <a href="#">GitHub</a>
-        <a href="mailto:your@email.com">Email</a>
-    </div>
-</div>
-
-<!-- RIGHT SIDE -->
-<div class="right">
-
-<section>
-<h2>About Me</h2>
-<p>
-I hold a PhD in Computer Science, a Master’s degree in Information Security and Cryptology, and an engineering degree in Mathematical Modeling. My research focuses on the formal verification and symbolic analysis of cryptographic protocols, with particular interest in privacy guarantees and provable security properties.
-</p>
+<section class="about-me">
+    <h2>About Me</h2>
+    <img src="your-photo.jpg" alt="Profile Photo">
+    <p>
+    Hi! I am D.H. I hold a PhD in Computer Science from UCA University, a Master’s in Information Security and Cryptology from Bordeaux University, and an engineering degree in Mathematical Modeling from ENIT. I am passionate about formally analyzing cryptographic protocols. My research focuses on symbolic analysis, privacy properties, and formal verification of protocols.  
+    </p>
 </section>
 
-<section>
-<h2>Publications</h2>
-<p><b>Paper Title 1</b><br>
-Conference / Journal — Year<br>
-Short description of contribution.</p>
-
-<p><b>Paper Title 2</b><br>
-Conference / Journal — Year<br>
-Short description of contribution.</p>
+<section class="publications">
+    <h2>Publications</h2>
+    <p><b>Paper Title 1</b> — Journal/Conference — Year</p>
+    <p><b>Paper Title 2</b> — Journal/Conference — Year</p>
 </section>
 
-<section>
-<h2>Research Interests</h2>
-<ul>
-<li>Formal verification of protocols</li>
-<li>Symbolic models</li>
-<li>Privacy properties</li>
-<li>Cryptographic proofs</li>
-<li>Automated reasoning tools</li>
-</ul>
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
 </section>
-
-<section>
-<h2>Contact</h2>
-<p>Email: <a href="mailto:your@email.com">your@email.com</a><br>
-Location: Your city<br>
-Affiliation: Your institution</p>
-</section>
-
-</div>
-</div>
 
 </body>
 </html>
