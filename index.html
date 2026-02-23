@@ -24,7 +24,6 @@ body{
 /* LEFT PANEL */
 .left{
     width:35%;
-    background:#f5f5f5;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -54,9 +53,18 @@ body{
     font-size:15px;
 }
 
-.socials a{
-    color:#111;
+/* Links in pink */
+a{
+    color:#e91e63; /* pink */
     text-decoration:none;
+    transition:0.3s;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.socials a{
     margin:0 10px;
     font-size:18px;
 }
@@ -73,22 +81,13 @@ section{
 }
 
 h2{
-    border-bottom:2px solid #111;
-    padding-bottom:10px;
-    margin-bottom:20px;
+    font-weight:600;
+    font-size:24px;
+    margin-bottom:15px;
 }
 
-.card{
-    background:#f9f9f9;
-    padding:25px;
-    border-radius:10px;
-    margin-bottom:20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-3px);
+p, li{
+    line-height:1.6;
 }
 
 /* MOBILE */
@@ -120,7 +119,7 @@ h2{
     <div class="socials">
         <a href="#">Google Scholar</a>
         <a href="#">GitHub</a>
-        <a href="#">Email</a>
+        <a href="mailto:your@email.com">Email</a>
     </div>
 </div>
 
@@ -129,46 +128,38 @@ h2{
 
 <section>
 <h2>About Me</h2>
-<div class="card">
+<p>
 I hold a PhD in Computer Science, a Master’s degree in Information Security and Cryptology, and an engineering degree in Mathematical Modeling. My research focuses on the formal verification and symbolic analysis of cryptographic protocols, with particular interest in privacy guarantees and provable security properties.
-</div>
+</p>
 </section>
 
 <section>
 <h2>Publications</h2>
-
-<div class="card">
-<b>Paper Title 1</b><br>
+<p><b>Paper Title 1</b><br>
 Conference / Journal — Year<br>
-Short description of contribution.
-</div>
+Short description of contribution.</p>
 
-<div class="card">
-<b>Paper Title 2</b><br>
+<p><b>Paper Title 2</b><br>
 Conference / Journal — Year<br>
-Short description of contribution.
-</div>
-
+Short description of contribution.</p>
 </section>
 
 <section>
 <h2>Research Interests</h2>
-<div class="card">
-• Formal verification of protocols<br>
-• Symbolic models<br>
-• Privacy properties<br>
-• Cryptographic proofs<br>
-• Automated reasoning tools
-</div>
+<ul>
+<li>Formal verification of protocols</li>
+<li>Symbolic models</li>
+<li>Privacy properties</li>
+<li>Cryptographic proofs</li>
+<li>Automated reasoning tools</li>
+</ul>
 </section>
 
 <section>
 <h2>Contact</h2>
-<div class="card">
-Email: your@email.com<br>
+<p>Email: <a href="mailto:your@email.com">your@email.com</a><br>
 Location: Your city<br>
-Affiliation: Your institution
-</div>
+Affiliation: Your institution</p>
 </section>
 
 </div>
