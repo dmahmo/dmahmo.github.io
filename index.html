@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>D.H — Academic Portfolio</title>
+<title>D.H.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Fonts for typewriter effect -->
+<!-- Google Font for typewriter effect -->
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
 <style>
@@ -13,24 +13,50 @@ body {
     margin: 0;
     font-family: 'Courier Prime', monospace; /* typewriter font */
     background: white;
-    color: #111;
+    color: black;
     line-height: 1.6;
     padding: 40px;
 }
 
-/* Image inside text */
-.about-me img {
-    float: left; /* image floats on the left */
-    width: 180px;
-    height: 180px;
-    margin-right: 20px; /* space between image and text */
-    margin-bottom: 15px;
-    border-radius: 8px; /* optional rounded corners */
-    object-fit: cover;
-    border: 2px solid #111;
+/* Header / Name clickable */
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+header h1 a:hover {
+    text-decoration: underline;
 }
 
-/* Links styling (pink) */
+/* Sections */
+section {
+    margin-bottom: 50px;
+}
+
+/* Section titles in bold */
+section h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Image inside About Me */
+.about-me img {
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 50%; /* fully rounded */
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+/* Pink links */
 a {
     color: #e91e63;
     text-decoration: none;
@@ -40,22 +66,26 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Section headings */
-h2 {
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 40px;
+/* Clear float after About Me */
+.about-me::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
 </head>
 
 <body>
 
+<header>
+    <h1><a href="#">D.H.</a></h1>
+</header>
+
 <section class="about-me">
     <h2>About Me</h2>
     <img src="your-photo.jpg" alt="Profile Photo">
     <p>
-    Hi! I am D.H. I hold a PhD in Computer Science from UCA University, a Master’s in Information Security and Cryptology from Bordeaux University, and an engineering degree in Mathematical Modeling from ENIT. I am passionate about formally analyzing cryptographic protocols. My research focuses on symbolic analysis, privacy properties, and formal verification of protocols.  
+    Hi! I am D.H. I hold a PhD in Computer Science from UCA University, a Master’s in Information Security and Cryptology from Bordeaux University, and an engineering degree in Mathematical Modeling from ENIT. I am passionate about formally analyzing cryptographic protocols. My research focuses on symbolic analysis, privacy properties, and formal verification of protocols.
     </p>
 </section>
 
@@ -63,6 +93,11 @@ h2 {
     <h2>Publications</h2>
     <p><b>Paper Title 1</b> — Journal/Conference — Year</p>
     <p><b>Paper Title 2</b> — Journal/Conference — Year</p>
+</section>
+
+<section class="hobbies">
+    <h2>Hobbies</h2>
+    <p>Here I will put my poems and other creative works.</p>
 </section>
 
 <section class="contact">
