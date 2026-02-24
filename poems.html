@@ -21,6 +21,41 @@ body {
     margin-right: auto;
 }
 
+
+ /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.2s;
+    }
+
+    .sidebar ul li a:hover {
+      color: #007BFF;
+    }    
 /* Header */
 header h1 {
     font-size: 36px;
@@ -77,8 +112,19 @@ a:hover {
 <body>
 
 <header>
-    <h1><a href="index.html">Some Poems</a></h1>
+    <h1><a href="index.html">My Poems</a></h1>
 </header>
+
+<div class="sidebar">
+    <h2>My Poems</h2>
+    <ul>
+      <li><a href="#poem1">Petit Papillon Pécheur</a></li>
+      <li><a href="#poem2">Speak the Truth</a></li>
+      <li><a href="#poem3">Under the Ice</a></li>
+      <li><a href="#poem4">Who Are You ?</a></li>
+    </ul>
+</div>
+
 
 <div class="columns">
 
@@ -185,7 +231,6 @@ So speak and vomit the Truth.
 <div class="column">
     <div class="poem">
     <div style="color: blue;" class="poem-title">Under the Ice</div>
-
 Blindfold your eyes
 to see it-
 a white hill
